@@ -2,6 +2,16 @@
 // endbower
 @import "variables";
 
+@keyframes switch_off {
+  from { background: $on-color; }
+  to { background: $off-color; }
+}
+
+@keyframes switch_on {
+  from { background: $off-color; }
+  to { background: $on-color; }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -29,10 +39,12 @@
   }
 
   .on {
+    animation: switch_on 250ms;
     background: $on-color;
   }
 
   .off {
+    animation: switch_off 250ms;
     background: $off-color;
   }
 
