@@ -1,8 +1,0 @@
-{
-  "name": "binary-clock",
-  "private": true,
-  "dependencies": {
-    "modernizr": "~2.8.1"
-  },
-  "devDependencies": {}
-}
